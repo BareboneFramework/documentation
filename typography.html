@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Barebone > Typography</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/documentation.css" rel="stylesheet" media="screen">
+</head>
+<body class="column">
+<header class="container navbar column">
+    <div class="container-fixed navbar-wrapper row align-space-between-center">
+        <h2 class="display-2 text-light"><a href="index.html">Barebone<span class="logo-small text-light-secondary">.sass</span>
+            <small class="text-light-secondary"> > Typography</small>
+        </a></h2>
+        <nav class="links" role="navigation">
+            <a href="typography.html" class="headline text-light-primary">Typography</a>
+            <a href="grid.html" class="headline text-light-primary">Grid</a>
+            <a href="colors.html" class="headline text-light-primary">Colors</a>
+        </nav>
+    </div>
+    <div class="description-wrapper container-fixed row sm-column">
+        <div class="content-list-wrapper container column flex-15 flex-md-25 flex-sm-100" role="navigation">
+            <p class="body-2 text-light-primary">Content</p>
+            <a href="#headers" class="text-light-secondary title">Headers</a>
+            <a href="#text-body" class="text-light-secondary title">Text Body</a>
+            <a href="#text-colors" class="text-light-secondary title">Text Colors</a>
+        </div>
+        <div class="description-wrapper">
+            <p class="headline text-light-secondary">
+                Typography is based on <a class="text-light-primary"
+                                          href="http://www.google.com/design/spec/style/typography.html#">Material
+                Design</a>
+                </br>
+                It is using it's font size and color schemes to provide beautiful typography
+            </p>
+        </div>
+    </div>
+</header>
+<div class="content flex container column">
+    <header id="headers">
+        <div class="container-fixed column">
+            <div class="link-wrapper container">
+                <a href="#headers" class="icon-link">
+                    <h2 class="display-1 text-light"><i class="fa fa-fw fa-link icon-light-inactive"></i> Headers</h2>
+                </a>
+            </div>
+            <p class="headline content-description text-light-secondary">
+                To preserve <a class="text-light-primary" href="http://webaim.org/techniques/semanticstructure/">semantic
+                structures</a>, you should style the <code>&lt;h1&gt; - &lt;h6&gt;</code> heading tags with the styling
+                classes
+                <br>
+                Default <code>&lt;h1&gt; - &lt;h6&gt;</code> have some fallback styling, but it's encuraged to use
+                <code>.display-#</code>
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper container-fixed column">
+            <div class="demo container">
+                <ul class="container column flex">
+                    <div class="container code-type row">
+                        <h6 class="subhead flex-20">SELECTOR / SASS</h6>
+                        <h6 class="subhead flex-40">PREVIEW</h6>
+                        <h6 class="subhead flex-35 offset-5 html">HTML</h6>
+                    </div>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .display-4
+                            </code>
+                            <code>
+                                @include display-4
+                            </code>
+                        </div>
+                        <h4 class="flex-40 display-4">Display 4</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .display-3
+                            </code>
+                            <code>
+                                @include display-3
+                            </code>
+                        </div>
+                        <h4 class="flex-40 display-3">Display 3</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .display-2
+                            </code>
+                            <code>
+                                @include display-2
+                            </code>
+                        </div>
+                        <h4 class="flex-40 display-2">Display 2</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .display-1
+                            </code>
+                            <code>
+                                @include display-1
+                            </code>
+                        </div>
+                        <h4 class="flex-40 display-1">Display 1</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header id="body-text">
+        <div class="container-fixed column">
+            <div class="link-wrapper container">
+                <a href="#body-text" class="icon-link">
+                    <h2 class="display-1 text-light"><i class="fa fa-fw fa-link icon-light-inactive"></i> Body Text</h2>
+                </a>
+            </div>
+            <p class="headline content-description text-light-secondary">
+                This classes can be applyed to any element
+                <br>
+                Default styling of text is <code>.body-1</code>
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper container-fixed column">
+            <div class="demo container">
+                <ul class="container column flex">
+                    <div class="container code-type row">
+                        <h6 class="subhead flex-20">SELECTOR / SASS</h6>
+                        <h6 class="subhead flex-40">PREVIEW</h6>
+                        <h6 class="subhead flex-35 offset-5 html">HTML</h6>
+                    </div>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .headline
+                            </code>
+                            <code>
+                                @include headline
+                            </code>
+                        </div>
+                        <h4 class="flex-40 headline">Headline</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="headline"&gt;Headline&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .title
+                            </code>
+                            <code>
+                                @include title
+                            </code>
+                        </div>
+                        <h4 class="flex-40 title">Title</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="title"&gt;Title&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .subhead
+                            </code>
+                            <code>
+                                @include subhead
+                            </code>
+                        </div>
+                        <h4 class="flex-40 subhead">Subhead</h4>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;h1 class="subhead"&gt;Subhead&lt;/h1&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .body-1
+                            </code>
+                            <code>
+                                @include body-1
+                            </code>
+                        </div>
+                        <p class="flex-40 body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            consequuntur cupiditate eaque eius enim harum, placeat qui! Commodi cupiditate eos eveniet
+                            exercitationem harum ipsam quisquam, repellendus repudiandae sapiente velit vitae.</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="body-1"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .body-2
+                            </code>
+                            <code>
+                                @include body-2
+                            </code>
+                        </div>
+                        <p class="flex-40 body-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            consequuntur cupiditate eaque eius enim harum, placeat qui! Commodi cupiditate eos eveniet
+                            exercitationem harum ipsam quisquam, repellendus repudiandae sapiente velit vitae.</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="body-2"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .caption
+                            </code>
+                            <code>
+                                @include caption
+                            </code>
+                        </div>
+                        <p class="flex-40 caption">Caption</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="caption"&gt;Caption&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header id="text-colors">
+        <div class="container-fixed column">
+            <div class="link-wrapper container">
+                <a href="#text-colors" class="icon-link">
+                    <h2 class="display-1 text-light"><i class="fa fa-fw fa-link icon-light-inactive"></i> Text Colors
+                    </h2>
+                </a>
+            </div>
+            <p class="headline content-description text-light-secondary">
+                Default color of text is <code>.text-dark-primary</code>
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper container-fixed column">
+            <div class="demo container">
+                <ul class="container column flex">
+                    <div class="container code-type row">
+                        <h6 class="subhead flex-20">SELECTOR / SASS</h6>
+                        <h6 class="subhead flex-40">PREVIEW</h6>
+                        <h6 class="subhead flex-35 offset-5 html">HTML</h6>
+                    </div>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .text-dark-primary
+                            </code>
+                            <code>
+                                $color-text-dark-primary
+                            </code>
+                        </div>
+                        <p class="flex-40 text-dark-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus iste
+                            labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit. Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-dark-primary"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .text-dark-secondary
+                            </code>
+                            <code>
+                                $color-text-dark-secondary
+                            </code>
+                        </div>
+                        <p class="flex-40 text-dark-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus iste
+                            labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit. Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-dark-secondary"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    <li class="container row align-start-center">
+                        <div class="selector-wrapper flex-20 text-dark-secondary column">
+                            <code>
+                                .text-dark-hint
+                            </code>
+                            <code>
+                                $color-text-dark-hint
+                            </code>
+                        </div>
+                        <p class="flex-40 text-dark-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus iste
+                            labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit. Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-dark-hint"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    <li class="container row align-start-center demo-light">
+                        <div class="selector-wrapper flex-20 text-light-secondary column">
+                            <code>
+                                .text-light-primary
+                            </code>
+                            <code>
+                                $color-text-light-primary
+                            </code>
+                        </div>
+                        <p class="flex-40 text-light-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus iste
+                            labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit. Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-light-primary"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center demo-light">
+                        <div class="selector-wrapper flex-20 text-light-secondary column">
+                            <code>
+                                .text-light-secondary
+                            </code>
+                            <code>
+                                $color-text-light-secondary
+                            </code>
+                        </div>
+                        <p class="flex-40 text-light-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus
+                            iste labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit.
+                            Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-light-secondary"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                    <li class="container row align-start-center demo-light">
+                        <div class="selector-wrapper flex-20 text-light-secondary column">
+                            <code>
+                                .text-light-hint
+                            </code>
+                            <code>
+                                $color-text-light-hint
+                            </code>
+                        </div>
+                        <p class="flex-40 text-light-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Fuga, odio omnis! Adipisci aliquam consequuntur delectus dignissimos dolores ducimus iste
+                            labore laborum nemo obcaecati placeat quidem, reiciendis saepe sed suscipit. Magnam?</p>
+<pre class="offset-5 flex-40">
+<code class="language-markup">
+    &lt;p class="text-light-hint"&gt;Lorem ipsum dolor[...]&lt;/p&gt;
+</code>
+</pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-wrapper container-fixed row align-space-between-center text-light-secondary">
+        <div class="created-by subhead">
+            Created with <i class="fa fa-heart"></i> by <a class="text-light-primary"
+                                                           href="https://twitter.com/Mentos1386">@Mentos1386</a>
+        </div>
+        <div class="github subhead">
+            <a href="https://github.com/BareboneFramework/barebone">Fork it on <i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js"></script>
+</body>
+</html>

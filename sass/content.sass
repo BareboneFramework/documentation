@@ -1,0 +1,107 @@
+// ------------------------------
+// Content
+// ------------------------------
+
+.content
+
+  // ------------------------------
+  // > Header
+  // ------------------------------
+
+  header
+    background-color: $secondary-color
+    a.icon-link
+      // Adjust icon position
+      margin-left: -50px
+    &.large
+      h2
+        margin: 1.2em 0
+    .content-description
+      code
+        font-size: 0.6em
+        background: $color-grey-300
+        padding: 0.35em
+        color: $color-text-dark-secondary
+        vertical-align: top
+
+  // ------------------------------
+  // > Demo Content
+  // ------------------------------
+
+  .demo
+    ul
+      padding: 0
+      li
+        padding: 5px
+        .selector-wrapper
+          code
+            &:first-of-type
+              color: $primary-color
+            &:last-of-type
+              margin-top: 10px
+        pre,
+        code
+          overflow: hidden
+          background-color: transparent
+        pre
+          margin-left: 5% !important
+
+    // ------------------------------
+    // > Code styling
+    //
+    // [1] Text Dark
+    // [2] Text Light
+    // [3] Overriding Prism.js styling
+    // [4] Dark Demo for showing text-light
+    //
+    // ------------------------------
+
+    code.language-markup
+      text-shadow: none !important
+      &:before
+        display: none
+        visibility: hidden
+      .token.lf
+        display: none
+        visibility: hidden
+
+      // [1]
+      color: $color-text-dark-primary
+      .token.tag
+        .punctuation
+          color: $color-text-dark-secondary
+        .tag-id
+          color: $color-pink-500
+        .attr-name
+          color: $color-green-500
+        .attr-value
+          color: $color-blue-500
+
+    // [2]
+    .demo-light
+      code.language-markup
+        color: $color-text-light-primary
+        .token.tag
+          .punctuation
+            color: $color-text-light-secondary
+          .tag-id
+            color: $color-pink-400
+          .attr-name
+            color: $color-light-green-400
+          .attr-value
+            color: $color-light-blue-400
+
+    // [3]
+    .code-type
+      background-color: $color-grey-300
+      padding: 10px
+      h6
+        color: $color-text-dark-secondary
+        margin-top: 0
+        margin-bottom: 0
+        &:not(.html)
+          margin: 0
+
+    // [4]
+    .demo-light
+      background-color: $color-grey-800
